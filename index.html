@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Assets/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>ROatman Work Day Scheduler</title>
   </head>
 
   <body>
@@ -30,7 +30,63 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <table class="table table-light thread-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col" id="timcolhead">Time</th>
+            <th scope="col" id="evecolhead">Event</th>
+            <th scope="col" id="delcolhead">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="timcol">9:00 am</th>
+            <td id="row9">Sample Event</td>
+            <td id="delcol"><i class="fas fa-trash-alt" ></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">10:00 am</th>
+            <td id="row10"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">11:00 am</th>
+            <td id="row11"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">12:00 am</th>
+            <td id="row12"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">1:00 pm</th>
+            <td id="row13"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">2:00 pm</th>
+            <td id="row14"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">3:00 pm</th>
+            <td id="row15"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">4:00 pm</th>
+            <td id="row16"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" id="timcol">5:00 am</th>
+            <td id="row17"></td>
+            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+          </tr>
+         
+        </tbody>
+      </table>
     </div>
 
 
@@ -39,3 +95,7 @@
     <script src="./Assets/script.js"></script>
   </body>
 </html>
+
+<!-- Last Revised 5/24/21 -->
+<!-- Raemarie Oatman raemarie.oatman@gmail.com -->
+<!-- Homework Week 5 - 05 Third-Party APIs: Work Day Scheduler -->
