@@ -26,68 +26,43 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <!-- this is where the current date/time goes -->
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead"></p> <!-- This is where JavaScript places a live date/time banner -->
     </header>
+
+
+
     <div class="container">
-      <table class="table table-light thread-dark table-hover">
-        <thead>
-          <tr>
-            <th scope="col" id="timcolhead">Time</th>
-            <th scope="col" id="evecolhead">Event</th>
-            <th scope="col" id="delcolhead">Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" id="timcol">9:00 am</th>
-            <td id="row9">Sample Event</td>
-            <td id="delcol"><i class="fas fa-trash-alt" ></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">10:00 am</th>
-            <td id="row10"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">11:00 am</th>
-            <td id="row11"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">12:00 am</th>
-            <td id="row12"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">1:00 pm</th>
-            <td id="row13"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">2:00 pm</th>
-            <td id="row14"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">3:00 pm</th>
-            <td id="row15"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">4:00 pm</th>
-            <td id="row16"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
-          <tr>
-            <th scope="row" id="timcol">5:00 am</th>
-            <td id="row17"></td>
-            <td id="delcol"><i class="fas fa-trash-alt"></i></td>
-          </tr>
+      <div class="row" id="9">
+        <div class="col-lg-2 time">9:00 am</div>
+        <div class="col-lg-9"> <textarea class="event"></textarea></div>
+        <div class="col-lg-1 del"> <button class="btn"> <i class="fas fa-trash-alt"></i></button></div>
+      </div>
+
+      <div class="row"  id="10">
+        <div class="col-lg-2 time" id="time">10:00 am</div>
+        <div class="col-lg-9"> <textarea class="event"></textarea></div>
+        <div class="col-lg-1 del"> <button class="btn del"> <i class="fas fa-trash-alt"></i></button></div>
+      </div>
+
+      <div class="row" id="11">
+        <div class="col-lg-2 time" id="time">11:00 am</div>
+        <div class="col-lg-9"> <textarea class="event"></textarea></div>
+        <div class="col-lg-1 del"> <button class="btn del"><i class="fas fa-trash-alt"></i></button></div>
+      </div>
+
+
+ 
+
+          
          
-        </tbody>
-      </table>
+
     </div>
+
+
+
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -96,6 +71,100 @@
   </body>
 </html>
 
-<!-- Last Revised 5/24/21 -->
+<!-- Last Revised 5/25/21 -->
 <!-- Raemarie Oatman raemarie.oatman@gmail.com -->
 <!-- Homework Week 5 - 05 Third-Party APIs: Work Day Scheduler -->
+
+
+<!-- <table class="table table-light thread-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col" id="timcolhead">Time</th>
+      <th scope="col" id="evecolhead">Event</th>
+      <th scope="col" id="delcolhead">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr id="row9am">
+      <th scope="row" id="timcol">9:00 am</th>
+      <td form class="form-inline"  id="event9">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"> <button class="btn" id="del9am"><i class="fas fa-trash-alt"></i></button></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">10:00 am</th>
+      <td id="row10am"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">11:00 am</th>
+      <td id="row11am"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">12:00 pm</th>
+      <td id="row12pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">1:00pm</th>
+      <td id="row13pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">2:00 pm</th>
+      <td id="row14pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">3:00 pm</th>
+      <td id="row15pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">4:00 pm</th>
+      <td id="row16pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr>
+
+    <tr>
+      <th scope="row" id="timcol">5:00 pm</th>
+      <td id="row17pm"
+        <form class="form-inline">
+        <input type="text" class="form-control col-md-12">
+      </td>
+      <td id="delcol"><i class="fas fa-trash-alt"></i></td>
+    </tr> -->
+<!--   </tbody>
+</table> -->
+
