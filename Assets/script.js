@@ -1,13 +1,24 @@
+// LIST OF FUNCTIONS //
 
-TimerEl = document.querySelector("#currentDay"); // creates a variable for the current date and time displayed in the header //
+
+// VARIABLES //
+timerEl = document.querySelector("#currentDay"); // creates a variable for the current date and time displayed in the header //
+var now; // initializes variable used for current time and date //
 
 
-// Create a loop of time to update the clock every second //
-    var now = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
-    console.log(now);
-    TimerEl.innerHTML = (now);
+// DATE AND TIME //
+    // This code places the date and time in the header and updates it every second //
+    (now = function() {
 
-    
+        timerEl.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+    })();
+
+    setInterval(now, 1000);
+// end of Date and Time //
+
+
+
 
 
 
