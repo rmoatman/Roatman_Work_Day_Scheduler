@@ -20,16 +20,43 @@
             setInterval(now, 1000);
         // end of Date and Time //
 
+var el9t = document.querySelector("#nine");
+var el9e = document.querySelector("#event9");
+var el10t = document.querySelector("#ten");
+var el10e = document.querySelector("#event10");
+var el11t = document.querySelector("#eleven");
+var el11e = document.querySelector("#event11");
+
+var calendar = [
+    {
+        time: el9t.textContent,
+        event: el9e.textContent
+    },
+
+    {
+        time: el10t.textContent,
+        event: el10e.textContent
+    },
+
+    {
+        time: el11t.textContent,
+        event: el11e.textContent
+    }
+];
+
+
+console.log(calendar)
 
 
 
-        // starter script for delete buttons //
+
+/*         // starter script for delete buttons //
         function blah() {
             alert("clicked");
 
         }
 
-        del9amEl.addEventListener("click", blah);
+        del9amEl.addEventListener("click", blah); */
 
         // end of starter script for delete buttons //
 
