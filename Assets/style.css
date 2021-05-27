@@ -1,11 +1,11 @@
     /* Variables used for styling various elements */
     :root {
       --maincolor: rgb(5, 36, 65);
-      --pastcolor: rgb(72, 79, 85);
+      --pastcolor: rgb(22, 62, 97);
       --presentcolor: rgb(93, 136, 173);
-      --futurecolor:  rgb(22, 62, 97);
+      --futurecolor:  rgb(72, 79, 85);
     }
-
+      
     /* Applies styling to the body which includes the header and the div class container */
     body {
       font-family: 'Open Sans', sans-serif;
@@ -23,6 +23,15 @@
       border-bottom: 10px solid var(--maincolor);
     }
 
+    /* Applies styling to the headings */
+    #heading {
+      background: var(--maincolor);
+      color: white;
+      text-align: center;
+      align-content:center;
+      font-size:larger;
+    }
+
     /* Applies styling to each row within the div container.  The div container contains 8 rows.  Each row contains 3 divs: time, textarea, and a del button */
     .row {
       white-space: pre-wrap;
@@ -35,77 +44,60 @@
       background-color:lightgrey;
     }
 
-    /* Applies styling to the first column in the div container containing each hour */
+    /* Applies styling to the first column in each row of the div container containing each hour */
     .time {
       text-align: right;
       align-self: center;
       font-weight: bolder;
     }
 
-    /* Applies styling to the individual input areas within each row of the div container  */
+    /* Applies styling to the second column in each row of the div container containing the textarea */
     textarea {
       background: transparent;
       border: none;
       resize: none;
-      color: var(--maincolor);
+      color: white;
       border-left: 1px solid var(--maincolor);
       padding: 10px;
       width: 100%;
       outline: none;
       }
 
-    /* Applies styling to the third column in the div container containing the delete buttons */
-    .del {
+    /* Applies styling to the third column in each row of the div container containing the save buttons */
+    .sav {
       text-align: center;
       align-self: center;
+    }
+
+    /* Applies styling to the save button */
+    .btn {
+      color: white;
+    }
+
+    /* Applies styling to the save button when the mouse hovers */
+    .btn:hover {
+      font-size: 30px;
+      color: white;
     }
 
     /* .past, .present, and .future classes visually identify the status of each hour on the scheduler--either in the past, present hour, or in the future */
     .past {
       background-color: var(--pastcolor);
       color: white;
-    }
+      }
 
     .present {
       background-color: var(--presentcolor);
-      color: var(--maincolor);
+      color: white
     }
 
     .future {
       background-color: var(--futurecolor);
       color: white;
     }
-
-
-
-
-
-
-
-    .saveBtn {
-      border-left: 1px solid black;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      background-color: #06aed5;
-      color: white;
-    }
-
-    .saveBtn i:hover {
-      font-size: 20px;
-      transition: all 0.3s ease-in-out;
-    }
-
-
-
-
-
-
-
-
-
-
     /* End of Table Formatting */
 
-    /* Last Revised 5/25/21 */
+
+    /* Last Revised 5/27/21 */
     /* Raemarie Oatman raemarie.oatman@gmail.com */
     /* Homework Week 5 - 05 Third-Party APIs: Work Day Scheduler */
