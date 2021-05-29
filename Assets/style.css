@@ -1,9 +1,9 @@
     /* Variables used for styling various elements */
     :root {
       --maincolor: rgb(5, 36, 65);
-      --pastcolor: rgb(22, 62, 97);
+      --pastcolor:  rgb(72, 79, 85);
       --presentcolor: rgb(93, 136, 173);
-      --futurecolor:  rgb(72, 79, 85);
+      --futurecolor: rgb(22, 62, 97);
     }
       
     /* Applies styling to the body which includes the header and the div class container */
@@ -95,9 +95,8 @@
       background-color: var(--futurecolor);
       color: white;
     }
-    /* End of Table Formatting */
+   
 
-
-    /* Last Revised 5/27/21 */
+    /* Last Revised 5/29/21 */
     /* Raemarie Oatman raemarie.oatman@gmail.com */
     /* Homework Week 5 - 05 Third-Party APIs: Work Day Scheduler */
